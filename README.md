@@ -5,4 +5,4 @@ Scrapping financial data from Yahoo finance.
 
 test test test
 
-assets/img/yahoo_finance_screenshot_1.png
+![data we want to scrap](assets/img/yahoo_finance_screenshot_1.png)
