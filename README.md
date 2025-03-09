@@ -7,7 +7,7 @@ This script parses the financial data page from yahoo finance for a list of tick
 
 ![data we want to scrap](assets/img/yahoo_finance_screenshot_1.png)
 ![other data we want to scrap](assets/img/yahoo_finance_screenshot_2.png)
-*the data this script is scrapping$
+*the data this script is scrapping*
 
 ## Methodology
 
