@@ -43,7 +43,7 @@ We then need to identify some code (html for instance) patterns that we could us
                 results[title] = data_
             results['year'] = year
 
-Please check the code files for me details.
+Please check the code files for more details.
 
 ## Results
 
