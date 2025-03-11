@@ -35,6 +35,7 @@ The extracted data are shown below and the section about 'Total Revenue' row fro
 We then need to identify some code (html for instance) patterns that we could use with regular expression to extract the data we are interested in and put them in a more usable format. Below is the code used to extract each row of the table (getting the row name as well as the data) and put them in a dictionary for each ticker:
 
 ‘‘‘
+
 results = dict()
         # here we use regular expressions (regex) to target the specific bits we are interested in
         for i in re.findall("column sticky(.*?)<div class=\"row lv-0", substr):
@@ -43,6 +44,7 @@ results = dict()
             data_ = [re.findall('>(.*) ', d)[0] for d in data if re.findall('>(.*) ', d)[0] not in title]
             results[title] = data_
         results['year'] = year
+        
 ‘‘‘
 
 Please check the code files for me details.
@@ -52,6 +54,7 @@ Please check the code files for me details.
 The result comes in the form of a dictionary of dictionaries with the following structure:
 
 ‘‘‘
+
 results = {
     ticker-1: { 'Total Revenue' : [123, ..., 789],
                 'Cost of Revenue' : [123, ..., 789],
@@ -61,6 +64,7 @@ results = {
                 ...,},
     ...
 }
+
 ‘‘‘
 
 This can easily be put into a Pandas dataframe format (function provided in the code) ready for any analytical task.
