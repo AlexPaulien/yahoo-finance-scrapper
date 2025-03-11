@@ -51,7 +51,6 @@ Please check the code files for me details.
 
 The result comes in the form of a dictionary of dictionaries with the following structure:
 
-‘‘‘
     results = {
         ticker-1: { 'Total Revenue' : [123, ..., 789],
                     'Cost of Revenue' : [123, ..., 789],
@@ -61,7 +60,6 @@ The result comes in the form of a dictionary of dictionaries with the following 
                     ...,},
         ...
     }
-‘‘‘
 
 This can easily be put into a Pandas dataframe format (function provided in the code) ready for any analytical task.
 
