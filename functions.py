@@ -85,6 +85,12 @@ def create_dataframe(financial_data_dic):
         data['ticker'] = ticker
         all_df.append(data)
     financials = pd.concat(all_df, axis=0)
+    # moving ticker to first position
+    col = financials.pop('ticker')
+    financials.insert(0, col.name, col)
+    # moving year to second postision
+    col = financials.pop('year')
+    financials.insert(1, col.name, col)
 
     return financials
 
